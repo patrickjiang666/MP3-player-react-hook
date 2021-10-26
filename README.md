@@ -17,6 +17,15 @@ Install all dependencies.
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### `API in http://localhost:4000/api/songs`
+
+In routes/songs.js
+
+### `Tasks - Todo`
+
+1. Make API call to http://localhost:4000/api/songs to get songs.
+2. Display them
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
