@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![效果图](https://github.com/patrickjiang666/MP3-player-react-hook/blob/master/public/mp3-player.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
