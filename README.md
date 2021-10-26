@@ -12,6 +12,8 @@ In the project directory, you can run:
 
 Install all dependencies. 
 
+### `Check out you Own branch, DO NOT make changes on Master branch`
+
 ### `npm run dev`
 
 Runs the app in the development mode.\
