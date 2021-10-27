@@ -5,6 +5,8 @@ var cors = require('cors');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config()
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var songsRouter = require('./routes/songs');
@@ -22,7 +24,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+app.use('/', express.Router().get('/', function(req, res, next) {
+  res.send('hello world');
+}));
 app.use('/api/users', usersRouter);
 app.use('/api/songs', songsRouter);
 

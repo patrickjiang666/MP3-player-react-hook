@@ -11,8 +11,11 @@ var http = require('http');
 /**
  * Get port from environment and store in Express.
  */
-
-var port = normalizePort(process.env.PORT || '4000');
+// console.log(process.env.API_PORT);
+// Object.keys(process.env).map((key) => {
+//   console.log(`----- ${key} -----`);
+// })
+var port = normalizePort(process.env.API_PORT || '4000');
 app.set('port', port);
 
 /**
@@ -86,5 +89,6 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
+  console.log('Listening on ' + bind);
   debug('Listening on ' + bind);
 }

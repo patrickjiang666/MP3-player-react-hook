@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+console.log('--- APP LOADED ---');
+console.log(process.env.NODE_ENV, process.env.REACT_APP_WEB_DATA );
+console.log('--- APP LOADED ---');
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
