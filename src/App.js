@@ -74,11 +74,11 @@ return (
     </div>
     <div className='current'>
       <div>
-        Name: {  }
+        Name: { songs[currentSongIndex].name }
         
       </div>
       <div>
-        Singer: {  }
+        Singer: { songs[currentSongIndex].singer }
       </div>
       <progress value='50' max='100'></progress>
     </div>
